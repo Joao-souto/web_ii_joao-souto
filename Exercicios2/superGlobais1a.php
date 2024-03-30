@@ -9,13 +9,21 @@
 </head>
 
 <body>
-    <form action="" method="get">
+    <form action="superGlobais1a.php" method="get">
         <fieldset>
             <legend>Atividade 1 a</legend>
+            
+            <label for="num1">Insira o número 1:</label>
+            <input type="number" id="num1" name="num1" />
+            
+            <label for="num2">Insira o número 2:</label>
+            <input type="number" id="num2" name="num2" />
         </fieldset>
 
-        <label for="num1">Insira o número 1:</label>
-        <input type="number" id="num1" name="num1" />
+        <?php
+            
+        ?>
+
     </form>
 </body>
 
