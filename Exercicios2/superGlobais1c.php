@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <form action="superGlobais1b.php" method="post">
+    <form action="superGlobais1c.php" method="request">
         <fieldset>
-            <legend>Atividade 1 b</legend>  
+            <legend>Atividade 1 c</legend>  
             
             <label for="num1">Insira o número 1:</label>
             <input type="number" id="num1" name="num1" />
@@ -24,10 +24,10 @@
             <br>
 
             <?php
-            //acessando o valor que o usuário inserir atráves da superglobal $_POST 
-            if(isset($_POST['num1']) && isset($_POST['num2'])){
-                $num1 = $_POST['num1'];
-                $num2 = $_POST['num2'];
+            //acessando o valor que o usuário inserir atráves da superglobal $_REQUEST   
+            if(isset($_REQUEST['num1']) && isset($_REQUEST['num2'])){
+                $num1 = $_REQUEST['num1'];
+                $num2 = $_REQUEST['num2'];
 
                 echo "Soma: " . ($num1 + $num2) . ".<br>";
                 echo "Subtração: " . ($num1 - $num2) . ".<br>";
