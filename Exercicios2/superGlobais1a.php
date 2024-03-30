@@ -29,15 +29,15 @@
                 $num1 = $_GET['num1'];
                 $num2 = $_GET['num2'];
 
-                echo "Soma: " . (num1 + num2) . ".<br>";
-                echo "Subtração: " . (num1 - num2) . ".<br>";
-                echo "Multiplicação: " . (num1 * num2) . ".<br>";
+                echo "Soma: " . ($num1 + $num2) . ".<br>";
+                echo "Subtração: " . ($num1 - $num2) . ".<br>";
+                echo "Multiplicação: " . ($num1 * $num2) . ".<br>";
 
-                if(num2 != 0){
-                    echo "Divisão: " . (num1/num2) . ".<br>";
+                if($num2 != 0){
+                    echo "Divisão: " . ($num1/$num2) . ".<br>";
                 }
                 else{
-                    echo "A divisão não pode ser por 0!!"
+                    echo "A divisão não pode ser por 0!!";
                 }
             }
             ?>
