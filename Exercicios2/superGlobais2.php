@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Atividade 2</title>
 </head>
 <body>
@@ -17,20 +18,24 @@
             <label for="idade">Idade: </label>
             <input type="number" id="idade" name="idade"><br><br>
 
+            <div class="align-left">
             <label for="genero">Gênero: </label><br>
             <input type="radio" name="genero" value="masculino" required>masculino<br>
             <input type="radio" name="genero" value="feminino" required>Feminino<br><br>
+            </div>
 
+            <div class="align-left">
             <label for="linguagens">Linguagens favoritas: </label><br>
             <input type="checkbox" name="linguagens[]" value="Java">Java<br>
             <input type="checkbox" name="linguagens[]" value="JavaScript">JavaScript<br>
             <input type="checkbox" name="linguagens[]" value="C">C<br><br>
+            </div>
 
             <input type="submit" value="Enviar">
 
         </fieldset>
-
-        <?php
+    </form>
+    <?php
             if($_SERVER["REQUEST_METHOD"] == "POST"){
                 if(isset($_POST["linguagens"])){
                     echo "Olá, " . $_POST["nome"] . "! Registramos que você têm " . $_POST["idade"] . " anos, é do gênero " . $_POST["genero"] . " e você gosta de " . implode(", ", $_POST["linguagens"]) . ".";
@@ -41,7 +46,6 @@
                 }
             }
         ?>
-    </form>
     
 </body>
 </html>
