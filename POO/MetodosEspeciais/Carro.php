@@ -13,40 +13,32 @@
             private $modelo;
             private $velocidade;
 
-            public function Carro($valorMarca,$valorCor,$valorModelo){ #método construtor
+            public function __construct($valorMarca,$valorCor,$valorModelo){ #método construtor
                 $this->marca = $valorMarca;
                 $this->cor = $valorCor;
                 $this->modelo = $valorModelo;
             }
-
             public function acelerar ($valor){
                 $this->velocidade += $valor;
             }
-
             public function desacelerar ($valor){
                 $this->velocidade -= $valor;
             }
-
             public function getMarca(){ #Criando métodos getter e setter
                 return $this->marca;
             }
-
             public function setMarca($valor){
                 return $this->marca = $valor;
             }
-
             public function getModelo(){
                 return $this->modelo;
             }
-
             public function setModelo($valor){
                 return $this->modelo = $valor;
             }
-
             public function getCor(){
                 return $this->cor;
             }
-
             public function setCor($valor){
                 return $this->cor = $valor;
             }
