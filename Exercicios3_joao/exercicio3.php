@@ -18,10 +18,11 @@
             <label for="n2">Insira o valor do índice 1: </label>
             <input type="number" name="n2" id="n2" required>
         </div>
+        <div>
             <label for="n3">Insira o valor do índice 2: </label>
             <input type="number" name="n3" id="n3" required>
         </div>
-        </div>
+        <div>
             <label for="n4">Insira o valor do índice 3: </label>
             <input type="number" name="n4" id="n4" required>
         </div>
