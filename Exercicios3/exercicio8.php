@@ -10,9 +10,11 @@
 
 <body>
     <form action="exercicio8.php" method="GET">
-        <button type="submit">Clique para verificar o valor que falta no array: </button>
+        <button type="submit" name="botaoClicado">Clique para verificar o valor que falta no array: </button>
     </form>
     <?php
+    if(isset($_GET['botaoClicado'])){
+        
     function missNumber($numbers)
     {
         $sum = 0;
@@ -22,8 +24,8 @@
 
         return 55 - $sum;
     }
-
-    echo missNumber([7, 6, 8, 10, 9, 5, 4, 3, 2]);
+    echo missNumber([7, 6, 1, 10, 9, 5, 4, 3, 2]);
+    }
     ?>
 
 </body>
